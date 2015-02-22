@@ -14,8 +14,9 @@ define([
     'jquery',
     'underscore',
     'backbone',
+    'views/header/HeaderView',
     'text!templates/base/BaseTpl.tpl'
-], function($, _, Backbone, BaseTpl) {
+], function($, _, Backbone, HeaderView, BaseTpl) {
     'use strict';
 
     var BaseView = Backbone.View.extend({
@@ -36,6 +37,10 @@ define([
 
         render: function() {
             this.$el.html(this.template(this.model.toJSON()));
+
+            this.headerView = new HeaderView();
+            this.$('.header-cnt').html(this.headerView.render().$el);
+
             return this;
         }
     });

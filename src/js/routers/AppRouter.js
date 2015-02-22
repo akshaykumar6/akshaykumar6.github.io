@@ -10,35 +10,66 @@
  * Application routes are registered here
  **/
 
-define([
+ define([
     'jquery',
     'underscore',
     'backbone',
+    'fullpage',
+    'nprogress', 
     'views/base/BaseView',
     'models/base/BaseModel',
-], function($, _, Backbone, BaseView, BaseModel) {
+    ], function($, _, Backbone, fullpage, NProgress, BaseView, BaseModel) {
 
-    var AppRouter = Backbone.Router.extend({
+        var AppRouter = Backbone.Router.extend({
 
-        initialize: function() {
+            initialize: function() {
+                NProgress.set(0.4);
+                $(window).resize(_.bind(function(){
+                    // Reload page on resize
+                    window.location.href = window.location.origin + window.location.pathname;
+                },this));
+            },
 
-            // _.bindAll(this,'');
+            routes: {
+                '': 'initApp',
+                'home': 'initApp',
+                'about': 'initApp',
+                'projects': 'initApp',
+                'interests': 'initApp',
+                'contact': 'initApp'
+            },
 
-        },
+            initApp: function() {
+                
+                if (!this.baseView) {
+                    this.baseView = new BaseView({
+                        model: new BaseModel()
+                    });
 
-        routes: {
-            '': 'initApp'
-        },
+                    $('#root').html(this.baseView.render().$el);
 
-        initApp: function() {
+                    var width = parseInt($(window).width()); 
+                    
+                    if (width>=768) {
+                        console.log()
+                       $('.wrapper').fullpage({
+                            anchors: ['home', 'about', 'projects',  'interests', 'contact'],
+                            menu: '.section-menu',
+                            navigation: false,
+                            scrollingSpeed: 1000
+                        });
+                        
+                        if (Backbone.history.fragment != '') {
+                            $.fn.fullpage.moveTo(Backbone.history.fragment, 0);
+                        } 
+                    }
+                 
+                    NProgress.done();
+                }
 
-            this.baseView = new BaseView({
-                model: new BaseModel()
-            });
+                
+            }
+        });
 
-            $('#root').html(this.baseView.render().$el);
-        }
+        return AppRouter;
     });
-
-    return AppRouter;
-});
