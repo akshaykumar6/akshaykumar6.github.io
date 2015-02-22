@@ -91,7 +91,7 @@
 			<div class="col-xs-12 col-sm-6">
 				<h2 class="page-header">Skills</h2>
 				<div class="col-xs-12">
-					<ul class="skill-icons list-inline hidden-xs">
+					<ul class="skill-icons list-inline">
 						<li title="Javascript">
 							<i class="devicon-javascript-plain"></i>
 						</li>
@@ -135,7 +135,7 @@
 							<i class="fa fa-ellipsis-h"></i>
 						</li>
 					</ul>
-					<ul class="skill-list list-inline visible-xs">
+					<ul class="skill-list list-inline hidden">
 						<li>
 							JavaScript
 						</li>
@@ -188,10 +188,11 @@
 	</div>
 	<div class="section">
 		<div class="row">
-			<h3 class="page-header visible-xs col-xs-12">
-				Projects
-			</h3>
+			
 			<div class="col-xs-12 col-sm-6">
+				<h2 class="page-header visible-xs">
+					Projects
+				</h2>
 				<h3 class="page-header">
 					AktivCase
 				</h3>
