@@ -24,10 +24,11 @@
 
             initialize: function() {
                 NProgress.set(0.4);
-                /*$(window).resize(_.bind(function(){
+                $(window).resize(_.bind(function(){
                     // Reload page on resize
-                    window.location.href = window.location.origin + window.location.pathname;
-                },this));*/
+                    // window.location.href = window.location.origin + window.location.pathname;
+                    this.redesign();
+                },this));
             },
 
             routes: {
@@ -40,7 +41,7 @@
             },
 
             initApp: function() {
-                
+
                 if (!this.baseView) {
                     this.baseView = new BaseView({
                         model: new BaseModel()
@@ -48,28 +49,39 @@
 
                     $('#root').html(this.baseView.render().$el);
 
-                    var width = parseInt($(window).width()); 
-                    
-                    if (width>=768) {
-                        console.log()
-                       $('.wrapper').fullpage({
-                            anchors: ['home', 'about', 'projects',  'interests', 'contact'],
-                            menu: '.section-menu',
-                            navigation: false,
-                            scrollingSpeed: 1000
-                        });
-                        
-                        if (Backbone.history.fragment != '') {
-                            $.fn.fullpage.moveTo(Backbone.history.fragment, 0);
-                        } 
-                    }
-                 
+                    this.redesign();
+
                     NProgress.done();
                 }
 
+            },
+
+            redesign: function (){
                 
+                var width = parseInt($(window).width()); 
+                
+                if (width>=768) {
+                    console.log()
+                    $('.wrapper').fullpage({
+                        anchors: ['home', 'about', 'projects',  'interests', 'contact'],
+                        menu: '.section-menu',
+                        scrollingSpeed: 1000
+                    });
+
+                    if (Backbone.history.fragment != '') {
+                        $.fn.fullpage.moveTo(Backbone.history.fragment, 0);
+                    }
+
+                    this.isFullPage = 1; 
+                }
+                else{
+                    if (typeof this.isFullPage != 'undefined' && this.isFullPage == 1) {
+                        $.fn.fullpage.destroy('all');
+                    }
+                }
+
             }
         });
 
-        return AppRouter;
-    });
+return AppRouter;
+});
