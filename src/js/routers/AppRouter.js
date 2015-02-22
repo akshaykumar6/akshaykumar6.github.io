@@ -24,10 +24,10 @@
 
             initialize: function() {
                 NProgress.set(0.4);
-                $(window).resize(_.bind(function(){
+                /*$(window).resize(_.bind(function(){
                     // Reload page on resize
                     window.location.href = window.location.origin + window.location.pathname;
-                },this));
+                },this));*/
             },
 
             routes: {
