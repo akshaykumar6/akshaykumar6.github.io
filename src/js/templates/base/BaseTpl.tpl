@@ -207,7 +207,7 @@
 				</h3>
 				<p>
 					Single-page web application to create pie, line, bar and doughnut charts.
-					<a target="_blank" href="http://aksharma.uphero.com/qcharts.html">Try out.</a>
+					<a target="_blank" href="http://akshaykumar6.github.io/QCharts">Try out.</a>
 				</p>
 			</div>
 			<div class="clearfix"></div>
