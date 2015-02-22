@@ -1,0 +1,12 @@
+{
+  "generator-backbone": {
+    "appName": "Akshaykumar6",
+    "testFramework": "mocha",
+    "templateFramework": "lodash",
+    "authorName": "Akshay Sharma",
+    "projectName": "src",
+    "appPath": "src",
+    "compassBootstrap": false,
+    "includeRequireJS": true
+  }
+}

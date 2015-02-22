@@ -1,0 +1,8 @@
+node_modules
+src_deploy
+test/temp
+.sass-cache
+.tmp
+test/bower_components/
+src_deploy.zip
+src/api/vendor

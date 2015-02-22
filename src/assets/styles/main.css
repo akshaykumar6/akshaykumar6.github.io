@@ -1,0 +1,48 @@
+/**
+ * Plugin CSS
+ */
+@import url('../../com/vendor/bootstrap/dist/css/bootstrap.css');
+@import url('../../com/vendor/nprogress/nprogress.css');
+@import url('ext/font-awesome-4.3.0/css/font-awesome.min.css');
+@import url('ext/devicon/devicon.min.css');
+@import url('ext/devicon/devicon-colors.css');
+
+/**
+ * External CSS 
+ */
+@import url('css/header.css');
+@import url('css/base.css');
+
+/**
+ * Fonts
+ */
+@import url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
+
+/**
+ * Generic CSS
+ */
+body {
+    background: #FAFAFA;
+    font-family: Lato,sans-serif,Arial;
+    font-size: 1rem !important;
+}
+
+.hero-unit {
+    margin: 50px auto 0 auto;
+    width: 300px;
+}
+@media (max-width: 768px) {
+ 	html{
+ 		font-size: 65%;
+ 	}
+}
+@media (max-width: 970px) {
+ 	html{
+ 		font-size: 80%;
+ 	}
+}
+@media (min-width: 1170px) {
+ 	html{
+ 		font-size: 100%;
+ 	}
+}
