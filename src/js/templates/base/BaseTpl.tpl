@@ -314,7 +314,7 @@
 				<div class="contact-cnt">
 					<h3 class="job-title">Contact me</h3>
 					<a class="btn btn-default" href="mailto:sharmakumar@gmail.com">
-						<i class="fa fa-send"></i> sharmakumar@gmail.com
+						<i class="fa fa-send"></i> sharmakumar3092@gmail.com
 					</a>
 					<hr>
 					<iframe class="git-btns" src="http://ghbtns.com/github-btn.html?user=akshaykumar6&type=follow&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
