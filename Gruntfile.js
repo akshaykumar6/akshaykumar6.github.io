@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     // configurable paths
     var yeomanConfig = {
         app: 'src',
-        dist: 'src_deploy'
+        dist: 'dist'
     };
 
     grunt.initConfig({
@@ -164,7 +164,7 @@ module.exports = function(grunt) {
             }
         },
         useminPrepare: {
-            src: ['<%= yeoman.app %>/index.php'],
+            src: ['<%= yeoman.app %>/index.html'],
             options: {
                 dest: '<%= yeoman.dist %>'
             }
@@ -231,9 +231,22 @@ module.exports = function(grunt) {
                         '.htaccess',
                         'assets/images/**/*.{webp,gif}',
                         'assets/fonts/**/*.*',
-                        'api/**/*.*'
+                        'api/**/*.*',
+                        'assets/styles/ext/**/*.*'
                     ]
                 }]
+            },
+            home: {
+                src: '<%= yeoman.dist %>/index.html',
+                dest: 'index.html',
+                options:{
+                    process: function (content, srcpath) {
+                        content = content.replace(/("com)/g,'"dist/com');
+                        content = content.replace(/("js)/g,'"dist/js');
+                        content = content.replace(/("assets)/g,'"dist/assets');
+                        return content;
+                      }
+                }
             }
         },
         bower: {
@@ -349,6 +362,10 @@ module.exports = function(grunt) {
         }
     });
 
+    grunt.registerTask('createHome', function() {
+        grunt.task.run('copy:home');
+    });
+
     grunt.registerTask('build', [
         'clean:dist',
         'createDefaultTemplate',
@@ -360,11 +377,12 @@ module.exports = function(grunt) {
         'concat',
         'cssmin',
         'uglify',
-        'copy',
+        'copy:dist',
         'replace',
         'rev',
         'usemin',
-        'compress'
+        // 'compress',
+        'copy:home'
     ]);
 
     grunt.registerTask('default', [
