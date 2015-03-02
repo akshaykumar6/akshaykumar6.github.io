@@ -96,25 +96,25 @@
 							<i class="devicon-javascript-plain"></i>
 						</li>
 						<li title="Backbone.js">
-							<i class="devicon-backbonejs-plain"></i>
+							<i class="devicon-backbonejs-plain-wordmark"></i>
 						</li>
 						<li title="PHP">
 							<i class="devicon-php-plain"></i>
 						</li>
 						<li title="Laravel">
-							<i class="devicon-laravel-plain"></i>
+							<i class="devicon-laravel-plain-wordmark"></i>
 						</li>
 						<li title="jQuery">
 							<i class="devicon-jquery-plain-wordmark"></i>
 						</li>
 						<li title="Git">
-							<i class="devicon-git-plain"></i>
+							<i class="devicon-git-plain-wordmark"></i>
 						</li>
 						<li title="MySQL">
 							<i class="devicon-mysql-plain-wordmark"></i>
 						</li>
 						<li title="Bootstrap">
-							<i class="devicon-bootstrap-plain"></i>
+							<i class="devicon-bootstrap-plain-wordmark"></i>
 						</li>
 						<li title="CSS3">
 							<i class="devicon-css3-plain-wordmark"></i>
@@ -128,12 +128,15 @@
 						<li title="Bower">
 							<i class="devicon-bower-plain-wordmark"></i>
 						</li>
+						<!-- <li title="AWS">
+							<i class="devicon-amazonwebservices-plain-wordmark"></i>
+						</li> -->
 						<li title="Adobe Illustrator">
 							<i class="devicon-illustrator-line"></i>
 						</li>
-						<li title="Still learning more..">
+						<!-- <li title="Still learning more..">
 							<i class="fa fa-ellipsis-h"></i>
-						</li>
+						</li> -->
 					</ul>
 					<ul class="skill-list list-inline hidden">
 						<li>
