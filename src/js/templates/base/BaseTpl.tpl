@@ -48,7 +48,7 @@
 						Passionate about exploring new technologies and ideas that can really make difference. 
 					</p>	
 					<p>
-						Motto - "Lets make life easier". 
+						Motto - "Let's make life easier". 
 					</p>
 				</div>
 				
