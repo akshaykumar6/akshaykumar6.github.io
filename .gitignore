@@ -6,3 +6,4 @@ test/temp
 test/bower_components/
 src_deploy.zip
 src/api/vendor
+src/com/vendor
