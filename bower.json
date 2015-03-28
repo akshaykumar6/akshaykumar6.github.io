@@ -11,7 +11,8 @@
     "json2": "*",
     "bootstrap": "3.1.1",
     "nprogress": "~0.1.6",
-    "fullpage": "~2.5.8"
+    "fullpage": "~2.5.8",
+    "githubjs": "*"
   },
   "devDependencies": {}
 }
