@@ -32,6 +32,10 @@ require.config({
         fullpage: {
             deps: ['jquery'],
             exports: 'fullpage'
+        },
+        Github: {
+            deps: ['underscore'],
+            exports: 'Github'
         }
     },
     paths: {
@@ -41,7 +45,8 @@ require.config({
         text: '../com/vendor/text/text',
         bootstrap: '../com/vendor/bootstrap/dist/js/bootstrap.min',
         nprogress: '../com/vendor/nprogress/nprogress',
-        fullpage: '../com/vendor/fullpage/jquery.fullPage.min'
+        fullpage: '../com/vendor/fullpage/jquery.fullPage.min',
+        github: '../com/vendor/githubjs/dist/github.min'
     }
 });
 

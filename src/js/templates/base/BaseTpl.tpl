@@ -33,6 +33,7 @@
 								<i class="fa fa-stack-overflow"></i>
 							</a>
 						</li>
+
 					</ul>
 				</div>
 			</div>
@@ -51,7 +52,6 @@
 						Motto - "Let's make life easier". 
 					</p>
 				</div>
-				
 			</div>
 			
 		</div>
@@ -304,23 +304,27 @@
 	<div class="section">
 		<div class="row">
 			
-			<div class="col-xs-12 col-sm-6 repo-cnt">
-				<h3 class="job-title">Liked this repository?</h3>
-				<iframe class="git-btns" src="http://ghbtns.com/github-btn.html?user=akshaykumar6&repo=akshaykumar6.github.io&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-
-				<iframe class="git-btns" src="http://ghbtns.com/github-btn.html?user=akshaykumar6&repo=akshaykumar6.github.io&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-
-				<iframe class="git-btns" src="http://ghbtns.com/github-btn.html?user=akshaykumar6&repo=akshaykumar6.github.io&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-				
+			<div class="col-xs-12 col-sm-6 git-usr-cnt">
+				<h3 class="job-title">GitHub Activity</h3>
+				<div class="github-profile">
+					
+				</div>
 			</div>
-			<div class="col-xs-12 col-sm-6">
+			<div class="col-xs-12 col-sm-6 git-repo-cnt">
+				<h3 class="job-title">GitHub Repositories</h3>
+				<div class="repo-1-profile">
+					
+				</div>
+				<hr>
+				<div class="repo-2-profile">
+					
+				</div>
+				<hr>
 				<div class="contact-cnt">
 					<h3 class="job-title">Contact me</h3>
-					<a class="btn btn-default" href="mailto:sharmakumar@gmail.com">
+					<a class="btn btn-default" href="mailto:sharmakumar@gmail.com" target="_blank">
 						<i class="fa fa-send"></i> sharmakumar3092@gmail.com
 					</a>
-					<hr>
-					<iframe class="git-btns" src="http://ghbtns.com/github-btn.html?user=akshaykumar6&type=follow&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
 				</div>	
 			</div>
 

@@ -6,7 +6,7 @@
 @import url('ext/font-awesome-4.3.0/css/font-awesome.min.css');
 @import url('ext/devicon/devicon.min.css');
 @import url('ext/devicon/devicon-colors.css');
-
+@import url('../../com/vendor/githubjs/dist/github.min.css');
 /**
  * External CSS 
  */

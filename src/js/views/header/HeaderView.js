@@ -3,7 +3,6 @@
  * @since: 21/02/2015@12:23:06
  * @file: HeaderView.js
  *
- * @copyright: KNOLSKAPE Solutions Pvt Ltd
  **/
 
 /**

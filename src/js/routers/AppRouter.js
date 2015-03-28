@@ -37,7 +37,7 @@
                 'about': 'initApp',
                 'projects': 'initApp',
                 'interests': 'initApp',
-                'contact': 'initApp'
+                'more': 'initApp'
             },
 
             initApp: function() {
@@ -48,7 +48,7 @@
                     });
 
                     $('#root').html(this.baseView.render().$el);
-
+                    this.baseView.renderGithubWidgets();
                     this.redesign();
 
                     NProgress.done();
@@ -63,7 +63,7 @@
                 if (width>=768) {
                     console.log()
                     $('.wrapper').fullpage({
-                        anchors: ['home', 'about', 'projects',  'interests', 'contact'],
+                        anchors: ['home', 'about', 'projects',  'interests', 'more'],
                         menu: '.section-menu',
                         scrollingSpeed: 1000
                     });
