@@ -19,6 +19,7 @@
 .web-icons-cnt{
 	margin: 20px auto 0 auto;
 	width: 200px;
+	text-align: center;
 }
 .web-icons-cnt li{
 	background-color: #a6bcc6;
@@ -27,9 +28,23 @@
 	width: 38px;
 	height: 38px;
 }
-.web-icons-cnt li:hover{
+/*.web-icons-cnt li:hover{
 	background-color: #5A7B8A;
+}*/
+
+.web-icons-cnt .GitHub:hover{
+	background-color: #000;
 }
+
+.web-icons-cnt .Stackoverflow:hover{
+	background-color: #F48024;
+}
+
+.web-icons-cnt .LinkedIn:hover{
+	background-color: #1A84BC;
+}
+
+
 .web-icons-cnt .fa{
 	font-size: 20px;
 	color: white;
@@ -101,8 +116,8 @@
 	color: #FFF;
 }
 .github-btn:hover{
-	background-color: #D5D5D5;
-	color: #000;
+	background-color: #000;
+	color: #fff;
 }
 .git-repo-cnt, .git-usr-cnt{
 	margin: 20px 0;
@@ -120,4 +135,8 @@
  	.center-image{
  		margin: 5% auto 0 auto;
  	}
+}
+
+.project-cnt{
+	min-height: 200px;
 }

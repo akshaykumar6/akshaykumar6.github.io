@@ -8,32 +8,21 @@
 				</div>
 				<div class="web-icons-cnt">
 					<ul class="social list-inline">
-						<li title="Facebook">
-							<a target="_blank" href="http://goo.gl/h3vBGW">
-								<i class="fa fa-facebook"></i>
-							</a>
-						</li>
-						<li title="Google+">
-							<a target="_blank" href="http://goo.gl/0AfgOg">
-								<i class="fa fa-google-plus"></i>
-							</a>
-						</li>
-						<li title="LinkedIn">
-							<a target="_blank" href="http://goo.gl/vENruj">
-								<i class="fa fa-linkedin"></i>
-							</a>
-						</li>
-						<li title="GitHub">
+						<li class="GitHub" title="GitHub">
 							<a target="_blank" href="http://goo.gl/Qxambe">
 								<i class="fa fa-github"></i>
 							</a>
 						</li>
-						<li title="Stackoverflow">
+						<li class="Stackoverflow" title="Stackoverflow">
 							<a target="_blank" href="http://goo.gl/DgUDSo">
 								<i class="fa fa-stack-overflow"></i>
 							</a>
 						</li>
-
+						<li class="LinkedIn" title="LinkedIn">
+							<a target="_blank" href="http://goo.gl/vENruj">
+								<i class="fa fa-linkedin"></i>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -95,8 +84,17 @@
 						<li title="Javascript">
 							<i class="devicon-javascript-plain"></i>
 						</li>
+						<li title="React.js">
+							<i class="devicon-react-plain-wordmark"></i>
+						</li>
 						<li title="Backbone.js">
 							<i class="devicon-backbonejs-plain-wordmark"></i>
+						</li>
+						<li title="Ruby on Rails">
+							<i class="devicon-rails-plain-wordmark"></i>
+						</li>
+						<li title="Ruby">
+							<i class="devicon-ruby-plain-wordmark"></i>
 						</li>
 						<li title="PHP">
 							<i class="devicon-php-plain"></i>
@@ -128,6 +126,9 @@
 						<li title="Bower">
 							<i class="devicon-bower-plain-wordmark"></i>
 						</li>
+						<li title="Ubuntu">
+							<i class="devicon-ubuntu-plain-wordmark"></i>
+						</li>
 						<!-- <li title="AWS">
 							<i class="devicon-amazonwebservices-plain-wordmark"></i>
 						</li> -->
@@ -144,6 +145,12 @@
 						</li>
 						<li>
 							Backbone.js
+						</li>
+						<li>
+							Ruby on Rails
+						</li>
+						<li>
+							Ruby
 						</li>
 						<li>
 							PHP
@@ -192,10 +199,20 @@
 	<div class="section">
 		<div class="row">
 			
-			<div class="col-xs-12 col-sm-6">
+			<div class="col-xs-12 col-sm-6 project-cnt">
 				<h2 class="page-header visible-xs">
 					Projects
 				</h2>
+				<h3 class="page-header">
+					AktivLearn
+				</h3>
+				<p>
+					Gamified learning management system which allows businesses to engage and train their workforce with highly customizable content, themes, games and simulations.
+					<a target="_blank" href="https://www.aktivlearn.com">Read More.</a>
+				</p>
+			</div>
+			<div class="col-xs-12 col-sm-6 project-cnt">
+				
 				<h3 class="page-header">
 					AktivCase
 				</h3>
@@ -204,25 +221,34 @@
 					<a target="_blank" href="https://www.knolskape.com/news/knolskape-launches-aktivcase/">Read More.</a>
 				</p>
 			</div>
-			<div class="col-xs-12 col-sm-6">
+			<div class="col-xs-12 col-sm-6 project-cnt">
+				<h3 class="page-header">
+					Github.js
+				</h3>
+				<p>
+					Github.js is a JavaScript plugin over GitHub APIs. It gives an easy way to feature your GitHub open-source contributions on your website or portfolio.
+				</p>
+				<a target="_blank" href="https://akshaykumar6.github.io/github-js">Live Demo</a>
+			</div>
+			<div class="col-xs-12 col-sm-6 project-cnt">
 				<h3 class="page-header">
 					QCharts
 				</h3>
 				<p>
-					Single-page web application to create pie, line, bar and doughnut charts.
-					<a target="_blank" href="http://akshaykumar6.github.io/QCharts">Try out.</a>
+					Single page web application to create pie, line, bar and doughnut charts.
 				</p>
+				<a target="_blank" href="http://akshaykumar6.github.io/QCharts">Live Demo</a>
 			</div>
-			<div class="clearfix"></div>
-			<div class="col-xs-12 col-sm-6">
+			<!-- <div class="clearfix"></div> -->
+			<!-- <div class="col-xs-12 col-sm-6">
 				<h3 class="page-header">
 					Distributed Sorting Application
 				</h3>
 				<p>
 					Developed a Distributed Environment Application to sort huge set of integers, where the heterogeneous systems (systems with different configuration) communicate with each other using RMI (Remote Method Invocation) API, and produce an optimized output at each iteration using the perceptron learning algorithm. The system is fault tolerant and will produce result even if some of the systems are disconnected on the run.
 				</p>
-			</div>
-			<div class="col-xs-12 col-sm-6">
+			</div> -->
+			<!-- <div class="col-xs-12 col-sm-6">
 				<h3 class="page-header">
 					Windows Phone Applications
 				</h3>
@@ -237,7 +263,7 @@
 						<a target="_blank" href="http://www.windowsphone.com/en-in/store/app/my-memoir/01c09a0c-440d-4d1a-b42b-7cd9e53ea794">My Memoir</a>
 					</li>
 				</ul>
-			</div>
+			</div> -->
 			<div class="clearfix"></div>
 			<div class="col-xs-12">
 				<div class="more-projects">
