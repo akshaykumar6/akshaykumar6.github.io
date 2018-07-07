@@ -428,7 +428,7 @@
 							</div>
 							<div class="col-xs-12 col-sm-6 git-repo-cnt">
 								
-								<a class="twitter-timeline" data-width="550" data-height="590" data-dnt="true" href="https://twitter.com/akshayk_sharma?ref_src=twsrc%5Etfw">Tweets by akshayk_sharma</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+								<a class="twitter-timeline" data-height="570" data-dnt="true" href="https://twitter.com/akshayk_sharma?ref_src=twsrc%5Etfw">Tweets by akshayk_sharma</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 								<hr>
 								<div class="contact-cnt">
@@ -451,14 +451,17 @@
 <script type="text/javascript" src="https://res.cloudinary.com/akshaykumar6/raw/upload/v1530952924/github-js/github.min.js"></script>
 
 <script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
+
+		if(window.outerWidth > 760 && window.outerHeight > 760){
+			var myFullpage = new fullpage('#fullpage', {
 				licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-        navigation: true,
+				navigation: true,
 				navigationPosition: 'right',
 				anchors: ['home', 'about', 'projects',  'interests', 'more'],
-        menu: '.section-menu',
-        navigationTooltips: ['Home', 'About', 'Projects',  'Interests', 'More']
-		});
+				menu: '.section-menu',
+				navigationTooltips: ['Home', 'About', 'Projects',  'Interests', 'More']
+			});
+		}
 		
 		var a = ['b','5','9','d','3','d','7','c','5','2','6'], b = ['f','c','6','6','6','a','6','2','2',], c = ['4','e','b','4','9','6','b','5','2','6',], d= ['8','9','e','0','d','3','d','5','b','3']; var str = a.join('') + b.join('') + c.join('') + d.join(''); 
 		Github.userActivity({
