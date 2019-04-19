@@ -210,5 +210,9 @@ body {
 }
 
 .container .project-cnt{
-	min-height: 200px;
+	min-height: 150px;
+}
+.project-cnt a {
+	display: inline-block;
+	margin: 5px 0;
 }
